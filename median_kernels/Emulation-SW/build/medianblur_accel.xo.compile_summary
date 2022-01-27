@@ -1,0 +1,170 @@
+<ENTRY>
+{
+ "thisFile": "/home/centos/workspace/median_kernels/Emulation-SW/build/medianblur_accel.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jan 27 17:19:03 2022",
+ "timestampMillis": "1643303943345",
+ "buildStep": {
+  "cmdId": "6cd9de96-1512-428b-9d95-3a418c450af4",
+  "name": "v++",
+  "logFile": "/home/centos/workspace/median_kernels/Emulation-SW/build/medianblur_accel/medianblur_accel.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target sw_emu --compile -I../src --config medianblur_accel-compile.cfg -I/home/centos/workspace/median_kernels/libs/xf_opencv/L1/include -I/home/centos/workspace/median_kernels/src/build -obuild/medianblur_accel.xo ../src/xf_median_blur_accel.cpp ",
+  "args": [
+   "--target",
+   "sw_emu",
+   "--compile",
+   "-I../src",
+   "--config",
+   "medianblur_accel-compile.cfg",
+   "-I/home/centos/workspace/median_kernels/libs/xf_opencv/L1/include",
+   "-I/home/centos/workspace/median_kernels/src/build",
+   "-obuild/medianblur_accel.xo",
+   "../src/xf_median_blur_accel.cpp"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/centos/workspace/median_kernels/Emulation-SW/medianblur_accel-compile.cfg",
+    "content": "platform=/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm\nsave-temps=1\nkernel=medianblur_accel\ndebug=1\nmessageDb=build/medianblur_accel.mdb\ntemp_dir=build\nreport_dir=build/reports\nlog_dir=build/logs\n\n[advanced]\nmisc=solution_name=medianblur_accel"
+   }
+  ],
+  "cwd": "/home/centos/workspace/median_kernels/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:19:03 2022",
+ "timestampMillis": "1643303943345",
+ "status": {
+  "cmdId": "6cd9de96-1512-428b-9d95-3a418c450af4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Jan 27 17:19:09 2022",
+ "timestampMillis": "1643303949490",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+  "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa",
+  "platformDirectory": "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_SW_EMU",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "medianblur_accel",
+     "file": "/home/centos/workspace/median_kernels/Emulation-SW/build/medianblur_accel.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/centos/workspace/median_kernels/src/xf_median_blur_accel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.1. SW Build 3246112 on 2021-06-09-14:19:56"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 17:19:09 2022",
+ "timestampMillis": "1643303949494",
+ "buildStep": {
+  "cmdId": "ec0f51e9-8525-49dc-9835-d9b5715c0b34",
+  "name": "vitis_hls",
+  "logFile": "/home/centos/workspace/median_kernels/Emulation-SW/build/medianblur_accel/medianblur_accel/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/centos/workspace/median_kernels/Emulation-SW/build/medianblur_accel/medianblur_accel/medianblur_accel.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/centos/workspace/median_kernels/Emulation-SW/build/medianblur_accel/medianblur_accel/medianblur_accel.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/workspace/median_kernels/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:19:09 2022",
+ "timestampMillis": "1643303949494",
+ "status": {
+  "cmdId": "ec0f51e9-8525-49dc-9835-d9b5715c0b34",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:19:25 2022",
+ "timestampMillis": "1643303965582",
+ "status": {
+  "cmdId": "ec0f51e9-8525-49dc-9835-d9b5715c0b34",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 17:19:25 2022",
+ "timestampMillis": "1643303965592",
+ "report": {
+  "path": "/home/centos/workspace/median_kernels/Emulation-SW/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 17:19:25 2022",
+ "timestampMillis": "1643303965592",
+ "report": {
+  "path": "/home/centos/workspace/median_kernels/Emulation-SW/guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:19:25 2022",
+ "timestampMillis": "1643303965593",
+ "status": {
+  "cmdId": "6cd9de96-1512-428b-9d95-3a418c450af4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

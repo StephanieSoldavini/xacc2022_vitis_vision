@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: sobel_accel
+Log file: /home/centos/workspace/median_kernels/Emulation-SW/build/sobel_accel/sobel_accel/vitis_hls.log

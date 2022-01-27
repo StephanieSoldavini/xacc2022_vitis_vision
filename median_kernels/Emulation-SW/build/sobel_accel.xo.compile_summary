@@ -1,0 +1,170 @@
+<ENTRY>
+{
+ "thisFile": "/home/centos/workspace/median_kernels/Emulation-SW/build/sobel_accel.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jan 27 17:41:43 2022",
+ "timestampMillis": "1643305303072",
+ "buildStep": {
+  "cmdId": "c539d4a8-627c-427f-9548-2e4575b7d7ef",
+  "name": "v++",
+  "logFile": "/home/centos/workspace/median_kernels/Emulation-SW/build/sobel_accel/sobel_accel.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target sw_emu --compile -I../src --config sobel_accel-compile.cfg -I/home/centos/workspace/median_kernels/libs/xf_opencv/L1/include -I/home/centos/workspace/median_kernels/src/build -obuild/sobel_accel.xo ../src/xf_sobel_accel.cpp ",
+  "args": [
+   "--target",
+   "sw_emu",
+   "--compile",
+   "-I../src",
+   "--config",
+   "sobel_accel-compile.cfg",
+   "-I/home/centos/workspace/median_kernels/libs/xf_opencv/L1/include",
+   "-I/home/centos/workspace/median_kernels/src/build",
+   "-obuild/sobel_accel.xo",
+   "../src/xf_sobel_accel.cpp"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/centos/workspace/median_kernels/Emulation-SW/sobel_accel-compile.cfg",
+    "content": "platform=/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm\nsave-temps=1\nkernel=sobel_accel\ndebug=1\nmessageDb=build/sobel_accel.mdb\ntemp_dir=build\nreport_dir=build/reports\nlog_dir=build/logs\n\n[advanced]\nmisc=solution_name=sobel_accel"
+   }
+  ],
+  "cwd": "/home/centos/workspace/median_kernels/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:41:43 2022",
+ "timestampMillis": "1643305303072",
+ "status": {
+  "cmdId": "c539d4a8-627c-427f-9548-2e4575b7d7ef",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Jan 27 17:41:49 2022",
+ "timestampMillis": "1643305309056",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+  "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa",
+  "platformDirectory": "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_SW_EMU",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sobel_accel",
+     "file": "/home/centos/workspace/median_kernels/Emulation-SW/build/sobel_accel.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/centos/workspace/median_kernels/src/xf_sobel_accel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.1. SW Build 3246112 on 2021-06-09-14:19:56"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 17:41:49 2022",
+ "timestampMillis": "1643305309061",
+ "buildStep": {
+  "cmdId": "7b02f042-753c-4e0e-b7f7-74f9a5f6e09c",
+  "name": "vitis_hls",
+  "logFile": "/home/centos/workspace/median_kernels/Emulation-SW/build/sobel_accel/sobel_accel/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/centos/workspace/median_kernels/Emulation-SW/build/sobel_accel/sobel_accel/sobel_accel.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/centos/workspace/median_kernels/Emulation-SW/build/sobel_accel/sobel_accel/sobel_accel.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/workspace/median_kernels/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:41:49 2022",
+ "timestampMillis": "1643305309061",
+ "status": {
+  "cmdId": "7b02f042-753c-4e0e-b7f7-74f9a5f6e09c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:08 2022",
+ "timestampMillis": "1643305328779",
+ "status": {
+  "cmdId": "7b02f042-753c-4e0e-b7f7-74f9a5f6e09c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 17:42:08 2022",
+ "timestampMillis": "1643305328788",
+ "report": {
+  "path": "/home/centos/workspace/median_kernels/Emulation-SW/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 17:42:08 2022",
+ "timestampMillis": "1643305328789",
+ "report": {
+  "path": "/home/centos/workspace/median_kernels/Emulation-SW/guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:08 2022",
+ "timestampMillis": "1643305328790",
+ "status": {
+  "cmdId": "c539d4a8-627c-427f-9548-2e4575b7d7ef",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

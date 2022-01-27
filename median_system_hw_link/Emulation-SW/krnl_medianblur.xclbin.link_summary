@@ -1,0 +1,710 @@
+<ENTRY>
+{
+ "thisFile": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jan 27 17:42:21 2022",
+ "timestampMillis": "1643305341769",
+ "buildStep": {
+  "cmdId": "ad5795f0-eae0-463b-8faf-ee6dc29a3f15",
+  "name": "v++",
+  "logFile": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/unwrapped/lnx64.o/v++ --xp param:compiler.lockFlowCritSlackThreshold=0 --xp vivado_param:hd.routingContainmentAreaExpansion=true --xp vivado_param:hd.supportClockNetCrossDiffReconfigurablePartitions=1 --xp vivado_param:bitstream.enablePR=4123 --xp vivado_param:physynth.ultraRAMOptOutput=false --xp vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1} --xp vivado_param:synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target sw_emu --link --config krnl_medianblur-link.cfg -okrnl_medianblur.xclbin ../../median_kernels/Emulation-SW/build/medianblur_accel.xo ../../median_kernels/Emulation-SW/build/sobel_accel.xo ",
+  "args": [
+   "--xp",
+   "param:compiler.lockFlowCritSlackThreshold=0",
+   "--xp",
+   "vivado_param:hd.routingContainmentAreaExpansion=true",
+   "--xp",
+   "vivado_param:hd.supportClockNetCrossDiffReconfigurablePartitions=1",
+   "--xp",
+   "vivado_param:bitstream.enablePR=4123",
+   "--xp",
+   "vivado_param:physynth.ultraRAMOptOutput=false",
+   "--xp",
+   "vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1}",
+   "--xp",
+   "vivado_param:synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}",
+   "--target",
+   "sw_emu",
+   "--link",
+   "--config",
+   "krnl_medianblur-link.cfg",
+   "-okrnl_medianblur.xclbin",
+   "../../median_kernels/Emulation-SW/build/medianblur_accel.xo",
+   "../../median_kernels/Emulation-SW/build/sobel_accel.xo"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur-link.cfg",
+    "content": "platform=/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm\nsave-temps=1\ndebug=1\nmessageDb=krnl_medianblur.mdb\ntemp_dir=krnl_medianblur.build\nreport_dir=krnl_medianblur.build/reports\nlog_dir=krnl_medianblur.build/logs\nremote_ip_cache=/home/centos/workspace/ip_cache\n\n[advanced]\nmisc=solution_name=link\n\n[connectivity]\nnk=medianblur_accel:1:medianblur_accel_1\nnk=sobel_accel:1:sobel_accel_1"
+   }
+  ],
+  "cwd": "/home/centos/workspace/median_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:21 2022",
+ "timestampMillis": "1643305341770",
+ "status": {
+  "cmdId": "ad5795f0-eae0-463b-8faf-ee6dc29a3f15",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Jan 27 17:42:27 2022",
+ "timestampMillis": "1643305347626",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+  "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa",
+  "platformDirectory": "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_SW_EMU",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "krnl_medianblur",
+    "file": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "medianblur_accel",
+     "file": "/home/centos/workspace/median_kernels/Emulation-SW/build/medianblur_accel.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/xo/medianblur_accel/medianblur_accel/cpu_sources/xf_median_blur_accel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "medianblur_accel_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   },
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sobel_accel",
+     "file": "/home/centos/workspace/median_kernels/Emulation-SW/build/sobel_accel.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/xo/sobel_accel/sobel_accel/cpu_sources/xf_sobel_accel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "sobel_accel_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.1. SW Build 3246112 on 2021-06-09-14:19:56"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 17:42:27 2022",
+ "timestampMillis": "1643305347631",
+ "buildStep": {
+  "cmdId": "101cd40e-a289-41a8-93df-abe2a05819a6",
+  "name": "regiongen",
+  "logFile": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur_regiongen.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/../runtime/bin/regiongen_new -v -m /home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur.xml -t alg -o xcl_top",
+  "args": [
+   "-v",
+   "-m",
+   "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur.xml",
+   "-t",
+   "alg",
+   "-o",
+   "xcl_top"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/workspace/median_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:27 2022",
+ "timestampMillis": "1643305347632",
+ "status": {
+  "cmdId": "101cd40e-a289-41a8-93df-abe2a05819a6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:29 2022",
+ "timestampMillis": "1643305349533",
+ "status": {
+  "cmdId": "101cd40e-a289-41a8-93df-abe2a05819a6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 17:42:29 2022",
+ "timestampMillis": "1643305349535",
+ "buildStep": {
+  "cmdId": "c8e7f482-5fa1-4bce-b8f0-fdd21feb4cf1",
+  "name": "gcc",
+  "logFile": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/sobel_accel/sobel_accel_kernel_gcc.log",
+  "commandLine": "/opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/gcc -I . -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../include -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/auto_cc/include -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2021.1/bin/../common/technology/autopilot/opencl -std=c++14 -g -I /home/centos/workspace/median_kernels/src -I /home/centos/workspace/median_kernels/libs/xf_opencv/L1/include -I /home/centos/workspace/median_kernels/src/build -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/xf_sobel_accel.o -MP -MF obj/xf_sobel_accel.Cd /home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/xo/sobel_accel/sobel_accel/cpu_sources/xf_sobel_accel.cpp -o obj/xf_sobel_accel.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/auto_cc/include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2021.1/bin/../common/technology/autopilot/opencl",
+   "-std=c++14",
+   "-g",
+   "-I",
+   "/home/centos/workspace/median_kernels/src",
+   "-I",
+   "/home/centos/workspace/median_kernels/libs/xf_opencv/L1/include",
+   "-I",
+   "/home/centos/workspace/median_kernels/src/build",
+   "-g",
+   "-fPIC",
+   "-g",
+   "-c",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-MD",
+   "-MT",
+   "obj/xf_sobel_accel.o",
+   "-MP",
+   "-MF",
+   "obj/xf_sobel_accel.Cd",
+   "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/xo/sobel_accel/sobel_accel/cpu_sources/xf_sobel_accel.cpp",
+   "-o",
+   "obj/xf_sobel_accel.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/workspace/median_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:29 2022",
+ "timestampMillis": "1643305349535",
+ "status": {
+  "cmdId": "c8e7f482-5fa1-4bce-b8f0-fdd21feb4cf1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:33 2022",
+ "timestampMillis": "1643305353591",
+ "status": {
+  "cmdId": "c8e7f482-5fa1-4bce-b8f0-fdd21feb4cf1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 17:42:33 2022",
+ "timestampMillis": "1643305353592",
+ "buildStep": {
+  "cmdId": "e70c39ec-7075-4895-b528-bb7d0beb5e3a",
+  "name": "ar",
+  "logFile": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/sobel_accel/sobel_accel_ar.log",
+  "commandLine": "/opt/Xilinx/Vivado/2021.1/tps/lnx64/binutils-2.26/bin/ar -cr /home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/sobel_accel/sobel_accel.csim_cu.a /home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/sobel_accel/obj/xf_sobel_accel.o",
+  "args": [
+   "-cr",
+   "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/sobel_accel/sobel_accel.csim_cu.a",
+   "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/sobel_accel/obj/xf_sobel_accel.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/workspace/median_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:33 2022",
+ "timestampMillis": "1643305353593",
+ "status": {
+  "cmdId": "e70c39ec-7075-4895-b528-bb7d0beb5e3a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:33 2022",
+ "timestampMillis": "1643305353610",
+ "status": {
+  "cmdId": "e70c39ec-7075-4895-b528-bb7d0beb5e3a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 17:42:33 2022",
+ "timestampMillis": "1643305353612",
+ "buildStep": {
+  "cmdId": "0d367814-83f7-42c2-b42e-e679406a1815",
+  "name": "gcc",
+  "logFile": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/medianblur_accel/medianblur_accel_kernel_gcc.log",
+  "commandLine": "/opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/gcc -I . -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../include -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/auto_cc/include -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2021.1/bin/../common/technology/autopilot/opencl -std=c++14 -g -I /home/centos/workspace/median_kernels/src -I /home/centos/workspace/median_kernels/libs/xf_opencv/L1/include -I /home/centos/workspace/median_kernels/src/build -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/xf_median_blur_accel.o -MP -MF obj/xf_median_blur_accel.Cd /home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/xo/medianblur_accel/medianblur_accel/cpu_sources/xf_median_blur_accel.cpp -o obj/xf_median_blur_accel.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/auto_cc/include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2021.1/bin/../common/technology/autopilot/opencl",
+   "-std=c++14",
+   "-g",
+   "-I",
+   "/home/centos/workspace/median_kernels/src",
+   "-I",
+   "/home/centos/workspace/median_kernels/libs/xf_opencv/L1/include",
+   "-I",
+   "/home/centos/workspace/median_kernels/src/build",
+   "-g",
+   "-fPIC",
+   "-g",
+   "-c",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-MD",
+   "-MT",
+   "obj/xf_median_blur_accel.o",
+   "-MP",
+   "-MF",
+   "obj/xf_median_blur_accel.Cd",
+   "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/xo/medianblur_accel/medianblur_accel/cpu_sources/xf_median_blur_accel.cpp",
+   "-o",
+   "obj/xf_median_blur_accel.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/workspace/median_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:33 2022",
+ "timestampMillis": "1643305353612",
+ "status": {
+  "cmdId": "0d367814-83f7-42c2-b42e-e679406a1815",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:36 2022",
+ "timestampMillis": "1643305356451",
+ "status": {
+  "cmdId": "0d367814-83f7-42c2-b42e-e679406a1815",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 17:42:36 2022",
+ "timestampMillis": "1643305356452",
+ "buildStep": {
+  "cmdId": "bdab5fc9-5c34-4e1f-ab43-80845d97e810",
+  "name": "ar",
+  "logFile": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/medianblur_accel/medianblur_accel_ar.log",
+  "commandLine": "/opt/Xilinx/Vivado/2021.1/tps/lnx64/binutils-2.26/bin/ar -cr /home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/medianblur_accel/medianblur_accel.csim_cu.a /home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/medianblur_accel/obj/xf_median_blur_accel.o",
+  "args": [
+   "-cr",
+   "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/medianblur_accel/medianblur_accel.csim_cu.a",
+   "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/medianblur_accel/obj/xf_median_blur_accel.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/workspace/median_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:36 2022",
+ "timestampMillis": "1643305356452",
+ "status": {
+  "cmdId": "bdab5fc9-5c34-4e1f-ab43-80845d97e810",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:36 2022",
+ "timestampMillis": "1643305356468",
+ "status": {
+  "cmdId": "bdab5fc9-5c34-4e1f-ab43-80845d97e810",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 17:42:36 2022",
+ "timestampMillis": "1643305356469",
+ "buildStep": {
+  "cmdId": "0bb3f79d-182f-419d-a332-ea693eab3724",
+  "name": "g++",
+  "logFile": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur_xcl_top_gpp.log",
+  "commandLine": "/opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/g++ -I . -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../include -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2021.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2021.1/bin/../data/emulation/include -I /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/auto_cc/include -fPIC -g -DHLS_STREAM_THREAD_SAFE -std=c++14 -fpermissive -c -MD -MT obj/xcl_top.o -MP -MF obj/xcl_top.CXXd xcl_top.cpp -o obj/xcl_top.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2021.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2021.1/bin/../data/emulation/include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/auto_cc/include",
+   "-fPIC",
+   "-g",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-fpermissive",
+   "-c",
+   "-MD",
+   "-MT",
+   "obj/xcl_top.o",
+   "-MP",
+   "-MF",
+   "obj/xcl_top.CXXd",
+   "xcl_top.cpp",
+   "-o",
+   "obj/xcl_top.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/workspace/median_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:36 2022",
+ "timestampMillis": "1643305356469",
+ "status": {
+  "cmdId": "0bb3f79d-182f-419d-a332-ea693eab3724",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358061",
+ "status": {
+  "cmdId": "0bb3f79d-182f-419d-a332-ea693eab3724",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358062",
+ "buildStep": {
+  "cmdId": "7bda88c1-4e25-440c-8c1f-1fb11895271d",
+  "name": "g++",
+  "logFile": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur_top_gpp.log",
+  "commandLine": "/opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/g++ -fPIC -DHLS_STREAM_THREAD_SAFE -std=c++14 -Wall -shared -Wl,--whole-archive,-soname,krnl_medianblur.so -o krnl_medianblur.so sobel_accel/sobel_accel.csim_cu.a medianblur_accel/medianblur_accel.csim_cu.a obj/xcl_top.o -Wl,--no-whole-archive -Wl,--as-needed -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lib/lnx64.o -lhlsmathsim -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fpo_v7_0 -lgmp -lmpfr -lIp_floating_point_v7_0_bitacc_cmodel -Wl,-rpath,/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fpo_v7_0 -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fft_v9_1 -lIp_xfft_v9_1_bitacc_cmodel -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fir_v7_0 -lgmp -lIp_fir_compiler_v7_2_bitacc_cmodel -L /opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/lib/csim -lhlsmc++-GCC46 -L /opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/ -lgcov",
+  "args": [
+   "-fPIC",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-Wall",
+   "-shared",
+   "-Wl,--whole-archive,-soname,krnl_medianblur.so",
+   "-o",
+   "krnl_medianblur.so",
+   "sobel_accel/sobel_accel.csim_cu.a",
+   "medianblur_accel/medianblur_accel.csim_cu.a",
+   "obj/xcl_top.o",
+   "-Wl,--no-whole-archive",
+   "-Wl,--as-needed",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lib/lnx64.o",
+   "-lhlsmathsim",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fpo_v7_0",
+   "-lgmp",
+   "-lmpfr",
+   "-lIp_floating_point_v7_0_bitacc_cmodel",
+   "-Wl,-rpath,/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fpo_v7_0",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fft_v9_1",
+   "-lIp_xfft_v9_1_bitacc_cmodel",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/tools/fir_v7_0",
+   "-lgmp",
+   "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2021.1/bin/../lnx64/lib/csim",
+   "-lhlsmc++-GCC46",
+   "-L",
+   "/opt/Xilinx/Vivado/2021.1/tps/lnx64/gcc-6.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/",
+   "-lgcov"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/workspace/median_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358063",
+ "status": {
+  "cmdId": "7bda88c1-4e25-440c-8c1f-1fb11895271d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358311",
+ "status": {
+  "cmdId": "7bda88c1-4e25-440c-8c1f-1fb11895271d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358489",
+ "report": {
+  "path": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358492",
+ "buildStep": {
+  "cmdId": "1d9e9109-c3f7-4171-89d3-8f7266749230",
+  "name": "xclbinutil",
+  "logFile": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur_xclbinutil.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/xclbinutil --add-section BITSTREAM:RAW:/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur.so --force --target sw_emu --add-section :JSON:/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur.rtd --append-section :JSON:/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur_xml.rtd --add-section BUILD_METADATA:JSON:/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur.xml --add-section DEBUG_DATA:RAW:/dev/null --output /home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur.so",
+   "--force",
+   "--target",
+   "sw_emu",
+   "--add-section",
+   ":JSON:/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur.rtd",
+   "--append-section",
+   ":JSON:/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/krnl_medianblur.xml",
+   "--add-section",
+   "DEBUG_DATA:RAW:/dev/null",
+   "--output",
+   "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/workspace/median_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358493",
+ "status": {
+  "cmdId": "1d9e9109-c3f7-4171-89d3-8f7266749230",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358595",
+ "status": {
+  "cmdId": "1d9e9109-c3f7-4171-89d3-8f7266749230",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358596",
+ "buildStep": {
+  "cmdId": "6cf6085b-9d5f-4c7c-97d9-ac5d49f46b98",
+  "name": "xclbinutil",
+  "logFile": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.xclbin.info",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/xclbinutil --quiet --info --input /home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.xclbin",
+  "args": [
+   "--quiet",
+   "--info",
+   "--input",
+   "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/workspace/median_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358596",
+ "status": {
+  "cmdId": "6cf6085b-9d5f-4c7c-97d9-ac5d49f46b98",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358713",
+ "status": {
+  "cmdId": "6cf6085b-9d5f-4c7c-97d9-ac5d49f46b98",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358717",
+ "report": {
+  "path": "/home/centos/workspace/median_system_hw_link/Emulation-SW/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358718",
+ "report": {
+  "path": "/home/centos/workspace/median_system_hw_link/Emulation-SW/guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358719",
+ "report": {
+  "path": "/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 27 17:42:38 2022",
+ "timestampMillis": "1643305358719",
+ "status": {
+  "cmdId": "ad5795f0-eae0-463b-8faf-ee6dc29a3f15",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

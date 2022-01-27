@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="link" dir="">
+  <FileSets>
+    <FileSet Name="kernel_medianblur_accel" Type="DesignSrcs">
+      <File Path="/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/xo/medianblur_accel/medianblur_accel/cpu_sources/xf_median_blur_accel.cpp"/>
+      <Config/>
+    </FileSet>
+    <FileSet Name="kernel_sobel_accel" Type="DesignSrcs">
+      <File Path="/home/centos/workspace/median_system_hw_link/Emulation-SW/krnl_medianblur.build/link/int/xo/sobel_accel/sobel_accel/cpu_sources/xf_sobel_accel.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

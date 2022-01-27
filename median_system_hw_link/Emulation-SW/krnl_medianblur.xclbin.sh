@@ -1,0 +1,1 @@
+/opt/Xilinx/Vitis/2021.1/bin/v++ --target sw_emu --link --config krnl_medianblur-link.cfg -okrnl_medianblur.xclbin ../../median_kernels/Emulation-SW/build/medianblur_accel.xo ../../median_kernels/Emulation-SW/build/sobel_accel.xo
